@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="btn" id="dark-toggle">🌙 Dark Mode</button>
+
+    <main class="game">
+      <!-- Player 1 -->
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <!-- Player 2 -->
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <!-- Dice -->
+      <div id="dice" class="dice">
+        <!-- dice dots dynamically added via JS -->
+      </div>
+
+      <!-- Buttons between players -->
+      <div class="button-container">
+        <button class="btn btn--roll" id="btn--roll">🎲 Roll Dice</button>
+        <button class="btn btn--hold" id="btn--hold">📥 Hold</button>
+      </div>
+
+      <!-- New Game button -->
+      <button class="btn btn--new" id="btn--new">🔄 New Game</button>
+    </main>
+
+    <script src="pigjs.js"></script>
+  </body>
+</html>
