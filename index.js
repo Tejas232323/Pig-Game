@@ -79,6 +79,9 @@ document.querySelector("#btn--hold").addEventListener("click", function () {
     activePlayerEl.classList.add("player--winner");
     document.querySelector("#btn--roll").disabled = true;
     document.querySelector("#btn--hold").disabled = true;
+    alert(
+      `Player ${activePlayer + 1} wins! 🎉\nClick "New Game" to play again.`
+    );
   } else {
     // Reset current score for active player
     currentScores[activePlayer] = 0;
