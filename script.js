@@ -82,6 +82,10 @@ document.querySelector("#btn--hold").addEventListener("click", function () {
     alert(
       `Player ${activePlayer + 1} wins! 🎉\nClick "New Game" to play again.`
     );
+    let activePlayer3=activePlayer===0?activePlayer+2:activePlayer;
+    alert(
+      `Player ${activePlayer3} loses! LALACH BURI BALA H 😂 🎉\nClick "New Game" to play again.`
+    );
   } else {
     // Reset current score for active player
     currentScores[activePlayer] = 0;
